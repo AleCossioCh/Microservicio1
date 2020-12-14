@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClientController {
     @RequestMapping("/")
     public String getClient(){
-        Client client = new Client("Juanito", "Lopez", "juanitoElLopez@gmail.com",
+        Client client = new Client("Josecito", "Lopez", "juanitoElLopez@gmail.com",
                 new Card("123456789123456", "123", "LOPEZ", "9", "21", "visa"));
         Gson gson = new Gson();
         String json = gson.toJson(client.getCard());
